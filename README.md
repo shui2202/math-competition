@@ -1,1 +1,1 @@
-# Math competiton
+# Math Competiton
