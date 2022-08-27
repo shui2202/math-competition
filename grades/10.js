@@ -11,6 +11,7 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
+    submit.disabled = true
     var num1 = Math.floor((Math.random() * (12 - 2 + 2)) + 2);
     var num2 = Math.floor((Math.random() * (12 - 1 + 1)) + 1);
     var answer = binomial(num1, num2)
@@ -30,6 +31,7 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
+            submit.disabled = false
             var input = textbox.value
             if (input == answer) {
                 submit.innerText = "Next round"
