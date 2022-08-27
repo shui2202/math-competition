@@ -3,6 +3,7 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
+    submit.disabled = true
     var num1 = Math.floor((Math.random() * (90 - 5 + 5)) + 5);
     var num2 = Math.floor((Math.random() * (60 - 10 + 10)) + 10);
     var multiply = num1 * num2
@@ -22,6 +23,7 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
+            submit.disabled = false
             var input = textbox.value
             if (input == answer) {
                 submit.innerText = "Next round"
