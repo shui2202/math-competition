@@ -3,10 +3,9 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
-    console.log("h")
     var num1 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
     var num2 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
-    while (num1 >= num2 ) {
+    while (num1 < num2 ) {
         num1 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
         num2 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
     }
