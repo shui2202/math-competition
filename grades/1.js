@@ -4,10 +4,15 @@ submit.addEventListener("click", function(){
     var num1 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
     var num2 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
     var question = `What is ${num1} + ${num2}`
+    var question2 = `What is ${num1} - ${num2}`
     var answer = num1 + num2
     var textbox = document.createElement("input")
     var text = document.createElement("h3")
+    if(Math.random() > 0.5) {
     text.innerText = question
+    } else {
+    text.innerText = question2
+    }
     stuff.appendChild(text)
     stuff.appendChild(textbox)
 })
