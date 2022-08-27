@@ -1,5 +1,7 @@
 body {
     background-image: url("https://shui2202.github.io/math-competition/math2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .dropdown {
