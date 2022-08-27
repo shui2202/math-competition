@@ -1,6 +1,57 @@
-h1{
+h1, .level{
     text-align: center;
 }
 button{
     margin-left: calc(50% - 2em);
+}
+.paragraph-styling{
+    text-align: center;
+
+}
+.button-style{
+    margin-left: calc(50% - 2em);
+}
+.input-style{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.stuff{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 300px;
+    padding: 15px;
+    background-color: aliceblue;
+    box-shadow: 10px 10px;
+}
+.return{
+    display: flex;
+    cursor: pointer;
+    border: solid 1px #da7c0c;
+    background: #478dad;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border-radius: .3em;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 3em;
+    margin-left: calc(50% - 3em);
+}
+
+.return:hover {
+    background: #f47c20;
+}
+.return:active {
+    position: relative;
+    top: 1px;
 }
