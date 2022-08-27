@@ -3,6 +3,7 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
+    submit.disabled = true
     var x1 = Math.floor((Math.random() * (5 - 1 + 1)) + 1);
     var x2 = Math.floor((Math.random() * (5 - 1 + 1)) + 1);
     var y1 = Math.floor((Math.random() * (5 - 1 + 1)) + 1);
@@ -26,6 +27,7 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
+            submit.disabled = false
             var input = textbox.value
             if (input == answer) {
                 submit.innerText = "Next round"
