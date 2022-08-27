@@ -37,7 +37,7 @@ submit.addEventListener("click", function(){
                 alert("You got it wrong")
                 var returnToHome = document.createElement("a")
                 returnToHome.innerText = "Return to homepage"
-                returnToHome.href = "/index.html"
+                returnToHome.href = "/math-competition"
                 returnToHome.classList.add("return")
                 stuff.appendChild(returnToHome)
                 gameOver = true
