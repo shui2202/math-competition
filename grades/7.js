@@ -3,6 +3,7 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
+    submit.disabled = true
     var radius = Math.floor((Math.random() * (7 - 2 + 2)) + 2);
     var question = `What is the area of a circle with the radius of ${radius}`
     var answer = (radius * radius) * 3.14
@@ -24,6 +25,7 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
+            submit.disabled = false
             var input = textbox.value
             if (input == answer) {
                 submit.innerText = "Next round"
