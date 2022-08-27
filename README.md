@@ -1,2 +1,2 @@
 # Math Competiton
-Math ~ its for a hackathon 
+Math Competition App - it is for a hackathon 
