@@ -3,6 +3,7 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
+    submit.disabled = true
     var num1 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
     var num2 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
     var question = `What is ${num1} + ${num2}`
@@ -21,6 +22,7 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
+            submit.disabled = false
             var input = textbox.value
             if (input == answer) {
                 submit.innerText = "Next round"
@@ -28,7 +30,6 @@ submit.addEventListener("click", function(){
                 stuff.removeChild(text)
                 stuff.removeChild(textbox)
                 stuff.removeChild(submit1)
-                var text1 = document.createElement("h3")
                 alert("You got it correct!")
                 count ++
                 level.innerText = `Level: ${count}`   
@@ -36,7 +37,7 @@ submit.addEventListener("click", function(){
                 alert("You got it wrong")
                 var returnToHome = document.createElement("a")
                 returnToHome.innerText = "Return to homepage"
-                returnToHome.href = "/math-competition"
+                returnToHome.href = "/index.html"
                 returnToHome.classList.add("return")
                 stuff.appendChild(returnToHome)
                 gameOver = true
