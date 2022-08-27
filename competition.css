@@ -22,7 +22,7 @@ body {
     border-radius: 0.5em;
     width: -webkit-fill-available;
     text-decoration: none;
-    text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
 }
 
 h1{
