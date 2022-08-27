@@ -26,6 +26,7 @@ function prime(n) {
 }
 submit.addEventListener("click", function(){
     var num1 = Math.floor((Math.random() * (100 - 1 + 1)) + 1);
+    submit.disabled = true
     if (prime(num1) == false) {
       var answer = "no"
     } else{
@@ -46,6 +47,7 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
+            submit.disabled = false
             var input = textbox.value
             var input = input.toLowerCase()
             if (input == answer) {
