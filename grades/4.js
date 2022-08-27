@@ -3,6 +3,7 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
+    submit.disabled = true
     var num1 = Math.floor((Math.random() * (9 - 1 + 1)) + 1);
     var num2 = Math.floor((Math.random() * (9 - 1 + 1)) + 1);
     var num3 = Math.random()
@@ -35,6 +36,7 @@ submit.addEventListener("click", function(){
         while (gameOver == false) {
             var input = textbox.value
             if (input == answer) {
+                submit.disabled = false
                 submit.innerText = "Next round"
                 submit.classList.add("input-style")
                 stuff.removeChild(text)
