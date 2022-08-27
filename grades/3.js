@@ -3,8 +3,10 @@ var stuff = document.querySelector(".stuff")
 var level = document.querySelector(".level")
 var count = 0
 submit.addEventListener("click", function(){
+    submit.disabled = true
     var num1 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
     var num2 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
+
     var num3 = Math.random()
     if (num3 < 0.5){
         var symbol = "+"
@@ -28,6 +30,7 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
+            submit.disabled = false
             var input = textbox.value
             if (input == answer) {
                 submit.innerText = "Next round"
