@@ -2,6 +2,8 @@ body {
     background-image: url("https://shui2202.github.io/math-competition/math2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    animation: enchantment 1.5 alternate infinite;
+    background-blend-mode: luminosity;
 }
 
 .dropdown {
@@ -31,4 +33,12 @@ body {
 h1{
     text-align: center;
     text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
+}
+
+@keyframes enchantment {
+    from {
+    background-color: darkblue;
+    } to {
+    background=color: indigo;
+    }
 }
