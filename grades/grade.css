@@ -109,3 +109,40 @@ button:active {
     background-color: indigo;
   }
 }
+a::after {
+    line-height: 0.5;
+    text-indent: 0;
+    content: "◄";
+}
+a {
+    text-decoration: none;
+    top: .2em !important;
+    position: absolute;
+    left: 0.2em !important;
+    border: 0;
+    width: 1em;
+    height: 1em;
+    display: block;
+    color: black;
+    font-size: xx-large;
+    text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 5px white, 0px 0px 10px white;
+    transition: 200ms;
+}
+
+a:hover {
+    animation: back 1s alternate infinite;
+}
+
+@keyframes back {
+    0% {
+    transform: translateX(0px);
+    } 20% {
+    transform: translateX(9px);
+    } 60% {
+    transform: translateX(-3px);
+    } 80% {
+    transform: translateX(9px);
+    } 100% {
+    transform: translateX(-3px)
+    }
+}
