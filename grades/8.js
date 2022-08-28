@@ -44,7 +44,6 @@ submit.addEventListener("click", function(){
                 alert("You got it wrong")
                 localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
                 points.innerText = "Stats - " + localStorage.getItem("points") + " points"
-                var returnToHome = document.createElement("a")
                 gameOver = true
             }
         }
