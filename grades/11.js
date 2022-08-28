@@ -45,12 +45,17 @@ submit.addEventListener("click", function(){
                 xp += 10  
             } else {
                 alert("You got it wrong")
+                if(localStorage.getItem("points") == undefined){
+                    localStorage.setItem("points", xp)
+
+                } 
                 localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
+                
                 points.innerText = "Stats - " + localStorage.getItem("points") + " points"
+                submit1.disabled = true
                 gameOver = true
             }
         }
     })
 })
-
 
