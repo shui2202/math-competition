@@ -51,7 +51,7 @@ submit.addEventListener("click", function(){
                 level.innerText = `Level: ${count}` 
                 xp += 10 
             } else {
-                alert("You got it wrong")
+                alert(`You got it wrong. The correct answer was ${answer}.`)
                 if(localStorage.getItem("points") == undefined){
                     localStorage.setItem("points", xp)
 
