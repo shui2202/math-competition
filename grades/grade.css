@@ -12,7 +12,7 @@ body {
   background-blend-mode: luminosity;
 }
 
-h1 {
+h1, .points {
   text-align: center;
   color: black;
   text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
