@@ -12,10 +12,17 @@ body {
   background-blend-mode: luminosity;
 }
 
-h1, .points {
+h1{
   text-align: center;
   color: black;
   text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+}
+.points{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+
 }
 .level {
   text-align: center;
