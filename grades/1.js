@@ -47,10 +47,7 @@ submit.addEventListener("click", function(){
             } else {
                 localStorage.clear()
                 alert(`You got it wrong. The correct answer was ${answer}.`)
-                if(localStorage.getItem("points") == undefined){
-                    localStorage.setItem("points", xp)
 
-                } 
                 localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
                 
                 points.innerText = "Stats - " + localStorage.getItem("points") + " points"
