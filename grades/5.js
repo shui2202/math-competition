@@ -50,6 +50,11 @@ submit.addEventListener("click", function(){
             submit.disabled = false
             var input = textbox.value
             var input = input.toLowerCase()
+            if (input == "") {
+                alert("Please submit an answer!")
+                submit.disabled = true
+                break
+            }
             if (input == answer) {
                 submit.innerText = "Next round"
                 submit.classList.add("input-style")
