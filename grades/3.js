@@ -49,10 +49,6 @@ submit.addEventListener("click", function(){
                 alert("You got it wrong")
                 localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
                 points.innerText = "Stats  - " + localStorage.getItem("points") + " points"
-                returnToHome.innerText = "Return to homepage"
-                returnToHome.href = "/index.html"
-                returnToHome.classList.add("return")
-                stuff.appendChild(returnToHome)
                 gameOver = true
             }
         }
