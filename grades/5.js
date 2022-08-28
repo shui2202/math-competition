@@ -53,6 +53,11 @@ submit.addEventListener("click", function(){
         while (gameOver == false) {
             submit.disabled = false
             var input = textbox.value
+            if (input == "") {
+                submit.disabled = true
+                alert("Please submit an answer!")
+                break
+            }
             var input = input.toLowerCase()
             if (input == answer) {
                 submit.innerText = "Next round"
