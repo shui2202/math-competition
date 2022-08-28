@@ -56,6 +56,7 @@ submit.addEventListener("click", function(){
                 
                 points.innerText = "Stats - " + localStorage.getItem("points") + " points"
                 submit1.disabled = true
+                submit.disabled = true
                 gameOver = true
             }
         }
