@@ -53,12 +53,12 @@ submit.addEventListener("click", function(){
         while (gameOver == false) {
             submit.disabled = false
             var input = textbox.value
+            var input = input.toLowerCase()
             if (input == "") {
                 submit.disabled = true
                 alert("Please submit an answer!")
                 break
             }
-            var input = input.toLowerCase()
             if (input == answer) {
                 submit.innerText = "Next round"
                 submit.classList.add("input-style")
@@ -71,9 +71,14 @@ submit.addEventListener("click", function(){
                 xp += 10   
             } else {
                 alert("You got it wrong")
-                localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
-                points.innerText = "Stats  - " + localStorage.getItem("points") + " points"
+                if(localStorage.getItem("points") == undefined){
+                    localStorage.setItem("points", xp)
 
+                } 
+                localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
+                
+                points.innerText = "Stats - " + localStorage.getItem("points") + " points"
+                submit1.disabled = true
                 gameOver = true
             }
         }
