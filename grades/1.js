@@ -26,10 +26,8 @@ submit.addEventListener("click", function(){
     gameOver = false
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
-            submit.disabled = false
             var input = textbox.value
             if (input == "") {
-                submit.disabled = true
                 alert("Please submit an answer!")
                 break
             }
