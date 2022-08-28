@@ -27,6 +27,11 @@ submit.addEventListener("click", function(){
         while (gameOver == false) {
             submit.disabled = false
             var input = textbox.value
+            if (input == "") {
+                submit.disabled = true
+                alert("Please submit an answer!")
+                break
+            }
             if (input == answer) {
                 submit.innerText = "Next round"
                 submit.classList.add("input-style")
