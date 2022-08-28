@@ -23,6 +23,11 @@ submit.addEventListener("click", function(){
     stuff.appendChild(textbox)
     stuff.appendChild(submit1)
     gameOver = false
+    textbox.addEventListener("keyup", function(event){
+        if (event.keyCode == 13) {
+            submit1.click();
+        }
+    })
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
             submit.disabled = false
