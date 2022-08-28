@@ -71,7 +71,7 @@ submit.addEventListener("click", function(){
                     localStorage.setItem("points", xp)
 
                 } 
-                                localStorage.setItem("points", parseInt(localStorage.getItem("points")))
+                localStorage.setItem("points", parseInt(localStorage.getItem("points")))
                 
                 points.innerText = "Stats - " + localStorage.getItem("points") + " points"
                 submit.parentNode.removeChild(submit)
