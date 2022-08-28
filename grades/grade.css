@@ -80,7 +80,7 @@ button:active {
   align-items: center;
   flex-wrap: nowrap;
   width: 3em;
-  margin-left: calc(50% - 3em);
+  margin-left: calc(50% - 3.5em);
 }
 
 .return:hover {
