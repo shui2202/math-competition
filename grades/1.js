@@ -45,7 +45,7 @@ submit.addEventListener("click", function(){
                 xp += 10
             
             } else {
-  
+                submit.disabled = true
                 alert(`You got it wrong. The correct answer was ${answer}.`)
 
                 if(localStorage.getItem("points") == undefined){
@@ -56,7 +56,6 @@ submit.addEventListener("click", function(){
                 
                 points.innerText = "Stats - " + localStorage.getItem("points") + " points"
                 submit1.disabled = true
-                submit.disabled = false
                 gameOver = true
             }
         }
