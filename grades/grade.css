@@ -12,17 +12,11 @@ body {
   background-blend-mode: luminosity;
 }
 
-h1,
-.level {
-  text-align: center;
+h1, .level {
+    text-align: center;
     color: black;
     text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
-
-h1{
- color: black;
- text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
 }
-
 button {
   margin-left: calc(50% - 2em);
   background-color: gray;
@@ -85,7 +79,7 @@ button:active {
   align-items: center;
   flex-wrap: nowrap;
   width: 3em;
-  margin-left: calc(50% - 3.5em);
+  margin-left: calc(50% - 3em);
 }
 
 .return:hover {
