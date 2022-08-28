@@ -39,6 +39,11 @@ submit.addEventListener("click", function(){
     submit1.addEventListener("click", function(){
         while (gameOver == false) {
             var input = textbox.value
+            if (input == "") {
+                submit.disabled = true
+                alert("Please submit an answer!")
+                break
+            }
             if (input == answer) {
                 submit.disabled = false
                 submit.innerText = "Next round"
