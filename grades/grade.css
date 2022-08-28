@@ -1,5 +1,6 @@
 h1, .level{
     text-align: center;
+    text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
 }
 button{
     margin-left: calc(50% - 2em);
