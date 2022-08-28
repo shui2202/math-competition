@@ -1,58 +1,107 @@
-h1, .level{
-    text-align: center;
-    text-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
-}
-button{
-    margin-left: calc(50% - 2em);
-}
-.paragraph-styling{
-    text-align: center;
-
-}
-.button-style{
-    margin-left: calc(50% - 2em);
-}
-.input-style{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+body {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin: 0;
+  background-image: url("https://cdn.glitch.global/1152d106-d528-4253-8e56-a12e67a09616/unknown.png?v=1661646920655");
+  background-size: cover;
+  animation: enchantment 1s alternate infinite;
+  background-blend-mode: luminosity;
 }
 
-.stuff{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 900px;
-    height: 300px;
-    padding: 15px;
-    background-color: aliceblue;
-    box-shadow: 10px 10px;
+h1,
+.level {
+  text-align: center;
+  color: cyan;
+  
 }
-.return{
-    display: flex;
-    cursor: pointer;
-    border: solid 1px #da7c0c;
-    background: #478dad;
-    text-align: center;
-    text-decoration: none;
-    font: 14px/100% Arial, Helvetica, sans-serif;
-    padding: .5em 2em .55em;
-    text-shadow: 0 1px 1px rgba(0,0,0,.3);
-    border-radius: .3em;
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 3em;
-    margin-left: calc(50% - 3em);
+button {
+  margin-left: calc(50% - 2em);
+  background-color: gray;
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 0.5em;
+  box-shadow: 0 0.2em black;
+  transition: 100ms;
+  display: block;
+}
+button:hover {
+  background-color: darkgray
+}
+button:active {
+  transform: translateY(0.1em);
+  background-color: lightgray;
+  box-shadow: 0 0.1em black;
+  
+}
+.paragraph-styling {
+  text-align: center;
+}
+.button-style {
+  margin-left: calc(50% - 2em);
+}
+.input-style {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.stuff {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+  height: 20em;
+  padding: 15px;
+  background-color: aliceblue;
+  
+}
+.return {
+  display: flex;
+  cursor: pointer;
+  border: solid 1px #da7c0c;
+  background: #478dad;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: 0.5em 2em 0.55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 0.3em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 3em;
+  margin-left: calc(50% - 3em);
 }
 
 .return:hover {
-    background: #f47c20;
+  background: #f47c20;
 }
 .return:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
+}
+#progress {
+  border-bottom: 1em solid lightgreen;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+}
+@keyframes enchantment {
+  from {
+    background-color: darkblue;
+  }
+  to {
+    background-color: indigo;
+  }
 }
