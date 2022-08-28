@@ -1,5 +1,3 @@
-
-
 body {
     background-image: url("math.webp");
     background-repeat: no-repeat;
@@ -14,39 +12,38 @@ body {
 .text {
     text-align: center;
 }
-
-h1 {
-    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
-}
-
-h3 {
-    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
-}
-
-.button {
-    display: flex;
-    cursor: pointer;
-    border: solid 1px #da7c0c;
-    background: #478dad;
-    text-align: center;
+button {
+    margin-left: calc(50% - 2em);
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 0.5em;
+    box-shadow: 0 0.2em black;
+    transition: 100ms;
+    display: block;
     text-decoration: none;
-    font: 14px/100% Arial, Helvetica, sans-serif;
-    padding: .5em 2em .55em;
-    text-shadow: 0 1px 1px rgba(0,0,0,.3);
-    border-radius: .3em;
-    box-shadow: 0 1px 2px rgba(0,0,0,.2);
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 3em;
-    margin-left: calc(50% - 3em);
+
+  }
+  button:hover {
+    background-color: darkgray;
+    padding: 10px;
+    box-shadow: 0 0px 5px rgb(189, 186, 193);
+  }
+  button:active {
+    transform: translateY(0.1em);
+    background-color: lightgray;
+    box-shadow: 0 0.1em black;
+    
+  }
+
+h1, h3{
+    text-shadow: 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white, 0px 0px 3px white;
 }
-.button:hover {
-    background: #f47c20;
+h2 {
+    text-shadow: 0px 0px 3px orange, 0px 0px 3px orange, 0px 0px 3px orange, 0px 0px 3px orange, 0px 0px 3px orange, 0px 0px 3px orange, 0px 0px 3px orange;
 }
-.button:active {
-    position: relative;
-    top: 1px;
-}
+
+
