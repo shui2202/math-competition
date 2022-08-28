@@ -5,6 +5,14 @@ var level = document.querySelector(".level")
 var points = document.querySelector(".points")
 var count = 0
 var xp = 0
+if(localStorage.getItem("points") == undefined){
+    localStorage.clear()
+    localStorage.setItem("points", xp)
+
+} 
+localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
+
+points.innerText = "Stats - " + localStorage.getItem("points") + " points"
 submit.addEventListener("click", function(){
     submit.disabled = true
     var num1 = Math.floor((Math.random() * (10 - 0 + 0)) + 0);
@@ -55,19 +63,29 @@ submit.addEventListener("click", function(){
                 count ++
                 level.innerText = `Level: ${count}` 
                 xp += 10 
-            } else {
-                alert(`You got it wrong. The correct answer was ${answer}.`)
                 if(localStorage.getItem("points") == undefined){
+                    localStorage.clear()
+                    localStorage.setItem("points", xp)
+                
+                } 
+                localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
+                
+                points.innerText = "Stats - " + localStorage.getItem("points") + " points"
+            } else {
+
+                alert("You got it wrong")
+                if(localStorage.getItem("points") == undefined){
+                    localStorage.clear()
                     localStorage.setItem("points", xp)
 
                 } 
                 localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
                 
                 points.innerText = "Stats - " + localStorage.getItem("points") + " points"
-                submit1.disabled = true
+
+                submit.parentNode.removeChild(submit)
                 gameOver = true
             }
         }
     })
 })
-
