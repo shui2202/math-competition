@@ -43,6 +43,7 @@ submit.addEventListener("click", function(){
                 xp += 10
             
             } else {
+                submit.parentNode.removeChild(submit)
                 alert(`You got it wrong. The correct answer was ${answer}.`)
 
                 if(localStorage.getItem("points") == undefined){
