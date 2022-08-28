@@ -18,3 +18,13 @@ This project was created using three programming languages, HTML, CSS, and JavaS
 We also used VSCode, GitHub, and Glitch to run and test our code.
 
 What's next: As expected, we were not able to finish everything we desired to create in our application. After this hackathon is over, some of our plans on further developing our application is as follows: We will add more types of problems - it is evident that students will soon master the types of problems given in our program, meaning we have to give them new problems to further challenge them. Secondly, we also plan to further develop the point/xp system. Yes, the system already provides a lot of incentive to get math questions correct, but we plan to add a shop where students can buy collectables using their points. We plan to also add more customization for the user’s game. Such as background image, avatars, etc. 
+
+Challenges we faced: One challenge we faced was choosing our coding apps. At last, we decided to use a few different coding apps: Github, Glitch, and VSCode. We could put the code into each of the three programs and improve on it, since everyone was familiar with a different program.We also had challenges using GitHub. We were at first unable to collaborate efficiently on a project together, but as the Hackathon went on, we overcame the problem and quickly learned how to use it. For example, how to add collaborators, what pull requests are, etc. We also faced difficulty agreeing on what our project should be about and what kind of project we should make, so we solved that problem by voting. Coding the game to keep track of the user’s XP/points was also difficult (Local Storage). We kept getting errors and bugs. Also, our teammate Lucas didn’t help out in anything except in voting.
+
+What everyone did: 
+Richard: CSS, HTML, ideas
+Kevin: JavaScript, helped test the application
+Daniel: JavaScript, HTML
+Jade: CSS, ideas
+Lucas: Ideas
+
