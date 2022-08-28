@@ -8,8 +8,12 @@ function binomial(n, k) {
 }
 var submit = document.querySelector(".start")
 var stuff = document.querySelector(".stuff")
+var more = document.querySelector(".more")
 var level = document.querySelector(".level")
+var points = document.querySelector(".points")
 var count = 0
+var xp = 0
+
 submit.addEventListener("click", function(){
     submit.disabled = true
     var num1 = Math.floor((Math.random() * (12 - 2 + 2)) + 2);
@@ -33,11 +37,6 @@ submit.addEventListener("click", function(){
         while (gameOver == false) {
             submit.disabled = false
             var input = textbox.value
-            if (input == "") {
-                alert("Please submit an answer!")
-                submit.disabled = true
-                break
-            }
             if (input == answer) {
                 submit.innerText = "Next round"
                 submit.classList.add("input-style")
@@ -46,14 +45,13 @@ submit.addEventListener("click", function(){
                 stuff.removeChild(submit1)
                 alert("You got it correct!")
                 count ++
-                level.innerText = `Level: ${count}`   
+                level.innerText = `Level: ${count}`  
+                xp += 10 
             } else {
                 alert("You got it wrong")
-                var returnToHome = document.createElement("a")
-                returnToHome.innerText = "Return to homepage"
-                returnToHome.href = "/index.html"
-                returnToHome.classList.add("return")
-                stuff.appendChild(returnToHome)
+                localStorage.setItem("points", parseInt(localStorage.getItem("points")) + xp)
+                points.innerText = "Stats - " + localStorage.getItem("points") + " points"
+
                 gameOver = true
             }
         }
