@@ -21,10 +21,3 @@ What's next: As expected, we were not able to finish everything we desired to cr
 
 Challenges we faced: One challenge we faced was choosing our coding apps. At last, we decided to use a few different coding apps: Github, Glitch, and VSCode. We could put the code into each of the three programs and improve on it, since everyone was familiar with a different program.We also had challenges using GitHub. We were at first unable to collaborate efficiently on a project together, but as the Hackathon went on, we overcame the problem and quickly learned how to use it. For example, how to add collaborators, what pull requests are, etc. We also faced difficulty agreeing on what our project should be about and what kind of project we should make, so we solved that problem by voting. Coding the game to keep track of the user’s XP/points was also difficult (Local Storage). We kept getting errors and bugs. Also, our teammate Lucas didn’t help out in anything except in voting.
 
-What everyone did: 
-Richard: CSS, HTML, ideas
-Kevin: JavaScript, helped test the application
-Daniel: JavaScript, HTML
-Jade: CSS, ideas
-Lucas: Ideas
-
